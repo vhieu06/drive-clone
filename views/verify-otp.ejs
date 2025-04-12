@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Xác minh OTP</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+  <form action="/verify-otp" method="POST" class="bg-white p-8 shadow rounded w-96 space-y-4">
+    <h2 class="text-xl font-bold">Xác minh OTP</h2>
+    <input type="text" name="otp" placeholder="Nhập mã OTP" required class="w-full border p-2 rounded" />
+    <input type="password" name="password" placeholder="Mật khẩu mới" required class="w-full border p-2 rounded" />
+    <button class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded w-full">Đặt lại mật khẩu</button>
+  </form>
+</body>
+</html>

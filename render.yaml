@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: drive-clone
+    env: node
+    buildCommand: npm install
+    startCommand: node app.js
+    envVars:
+      - key: NODE_VERSION
+        value: 18

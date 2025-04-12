@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Danh sách file</title>
+</head>
+<body>
+  <h2>Chọn file để xoá</h2>
+  <form method="POST" action="/delete">
+    <% files.forEach(file => { %>
+      <div>
+        <input type="checkbox" name="files" value="<%= file %>"> <%= file %>
+      </div>
+    <% }) %>
+    <br>
+    <button type="submit">Xoá các file đã chọn</button>
+  </form>
+</body>
+</html>

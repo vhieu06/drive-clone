@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Đặt lại mật khẩu</title>
+</head>
+<body>
+  <h2>Đặt lại mật khẩu</h2>
+  <form action="/reset" method="POST">
+    <input type="hidden" name="email" value="<%= email %>" />
+    <input type="text" name="otp" placeholder="Nhập mã OTP" required />
+    <input type="password" name="newPassword" placeholder="Mật khẩu mới" required />
+    <button type="submit">Đặt lại</button>
+  </form>
+</body>
+</html>
